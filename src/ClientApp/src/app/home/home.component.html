@@ -1,0 +1,19 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+
+  <div class="container">
+      <h1 class="display-4">Fullstack Home Project</h1>
+      <p class="lead">This is an app to collecting customer reviews from public amazon product pages.</p>
+  </div>
+</div>
+<div class="container form-group" style="margin: 10px;">
+  <div class="input-group">
+      <!--<div class="input-group-prepend">
+        <span class="input-group-text" id="">Insert ASIN</span>
+      </div>-->
+      <input #asinInput type="text" class="form-control">
+      <button (click)="productReview.findAllReviews(asinInput.value)" class="btn btn-primary mb-2">Find Reviews</button>
+  </div>
+</div>
+<hr>
+<!--<app-review-list *ngIf="asinTexto" [review]="asinTexto"></app-review-list>-->
+<app-product-review #productReview></app-product-review>
