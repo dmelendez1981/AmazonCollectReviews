@@ -7,13 +7,9 @@
 </div>
 <div class="container form-group" style="margin: 10px;">
   <div class="input-group">
-      <!--<div class="input-group-prepend">
-        <span class="input-group-text" id="">Insert ASIN</span>
-      </div>-->
-      <input #asinInput type="text" class="form-control">
+      <input #asinInput type="text" placeholder="Insert an ANSI" class="form-control">
       <button (click)="productReview.findAllReviews(asinInput.value)" class="btn btn-primary mb-2">Find Reviews</button>
   </div>
 </div>
 <hr>
-<!--<app-review-list *ngIf="asinTexto" [review]="asinTexto"></app-review-list>-->
 <app-product-review #productReview></app-product-review>
