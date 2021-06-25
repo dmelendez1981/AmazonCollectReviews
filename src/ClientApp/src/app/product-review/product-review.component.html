@@ -18,14 +18,14 @@
 <h1 *ngIf="reviewList.length > 0">List of <small>Reviews with Asin number {{ reviewList[0].asin }}</small></h1>
 <hr>
 
-<table *ngIf="reviewList.length > 0" class="table table-bordered">
-    <thead>
+<table *ngIf="reviewList.length > 0" class="table table-bordered table-striped">
+    <thead class="thead-dark">
         <tr>
-            <th scope="col">Asin</th>
-            <th scope="col">Review Title</th>
-            <th scope="col">Review Content</th>
-            <th scope="col">Review Date</th>
-            <th scope="col">Review Rating</th>
+            <th scope="col" data-align="center">Asin</th>
+            <th scope="col" data-align="center">Review Title</th>
+            <th scope="col" data-align="center">Review Content</th>
+            <th scope="col" data-align="center">Review Date</th>
+            <th scope="col" sorted="true" data-align="center">Review Rating</th>
         </tr>
     </thead>
     <tbody>
